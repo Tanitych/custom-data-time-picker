@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="img/header-img/icons/favicon.png" />
+    <link rel="stylesheet" href="lips/fontawesome/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <style>
+    .custom__input {
+      border: 1px solid black;
+    }
+  </style>
+  <body>
+    <!-- @import "header.html" -->
+    <input class="custom__input" type="datetime" />
+    <!-- @import "footer.html" -->
+
+    <script src="js/jq/jquery.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="js/script.js"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
+
+    <script>
+      $(".custom__input").flatpickr({
+        enableTime: true,
+        time_24hr: true,
+        locale: "ru",
+        altInput: true,
+        altFormat: "j F, в H:i",
+        onChange: function (selectedDates, dateStr, instance) {},
+      });
+    </script>
+  </body>
+</html>
